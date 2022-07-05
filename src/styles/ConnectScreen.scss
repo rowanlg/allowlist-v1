@@ -1,0 +1,89 @@
+@import "Colours";
+
+.connect-screen-container {
+  width: 70vw;
+  height: 60vh;
+  border-radius: 2rem;
+  box-shadow: 0px 4px 10px -1px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  p {
+    font-size: 0.8rem;
+  }
+  .title {
+    margin-left: -3rem;
+    margin-bottom: -0.5rem;
+  }
+}
+.placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  p {
+    width: 70%;
+    text-align: center;
+    margin-top: -1rem;
+  }
+}
+.breaker-large {
+  width: 75%;
+  height: 2px;
+  background-color: $dark-text;
+}
+.breaker-small {
+  width: 69%;
+  height: 2px;
+  background-color: $dark-text;
+  opacity: 50%;
+}
+.connect-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  ul {
+    text-align: left;
+    font-size: 0.8rem;
+  }
+  a {
+    text-decoration: none;
+    color: $twitter-blue;
+  }
+  .requirements {
+    color: $pink;
+  }
+  .twitter {
+    color: $twitter-blue;
+  }
+  .eth-address {
+    color: #000;
+  }
+}
+.submit-button {
+  background-color: $pink;
+  color: white;
+  border: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.submitted-button {
+  background-color: grey;
+  color: white;
+  border: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+  border-radius: 2rem;
+}

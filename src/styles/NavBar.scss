@@ -1,0 +1,25 @@
+@import "Colours";
+
+.navbar-container {
+  margin: 0 auto;
+  width: 70vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  font-weight: 900;
+}
+
+.connect-button {
+  background-color: $pink;
+  color: white;
+  border: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}

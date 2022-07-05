@@ -1,23 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState, useEffect } from "react";
+import logo from "./logo.svg";
+import "./styles/App.scss";
+import NavBar from "./components/NavBar";
+import TwitterUser from "./components/TwitterUser";
+import ConnectScreen from "./components/ConnectScreen";
 
 function App() {
+  const [userDisplayName, setUserDisplayName] = useState("");
+  const [userName, setUserName] = useState("");
+  const [walletConnected, setWalletConnected] = useState(true);
+  const [submitted, setSubmitted] = useState(false);
+  const [accounts, setAccounts] = useState([]);
+
+  useEffect(() => {
+    setUserDisplayName("");
+    setUserName("");
+    setWalletConnected("");
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar
+        setUserDisplayName={setUserDisplayName}
+        userName={userName}
+        setUserName={setUserName}
+        walletConnected={walletConnected}
+        setWalletConnected={setWalletConnected}
+        accounts={accounts}
+        setAccounts={setAccounts}
+      />
+      <div className="content-container">
+        <ConnectScreen
+          userDisplayName={userDisplayName}
+          userName={userName}
+          setUserDisplayName={setUserDisplayName}
+          setUserName={setUserName}
+          accounts={accounts}
+          submitted={submitted}
+          setSubmitted={setSubmitted}
+        />
+      </div>
     </div>
   );
 }

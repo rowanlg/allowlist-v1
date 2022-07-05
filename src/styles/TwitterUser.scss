@@ -1,0 +1,37 @@
+@import "Colours";
+
+.twitter-user-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+}
+
+.username-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  h4 {
+    margin-bottom: -0.5rem;
+    margin-top: 12px;
+  }
+  p {
+    font-size: 0.8rem;
+    margin-bottom: 12px;
+  }
+}
+
+.login {
+  background-color: $twitter-blue;
+  color: white;
+  border: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+  border-radius: 2rem;
+  cursor: pointer;
+}
